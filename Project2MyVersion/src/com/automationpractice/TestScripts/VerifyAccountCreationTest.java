@@ -32,7 +32,6 @@ public class VerifyAccountCreationTest extends Base
 		{
 			hm.clickSignin();
 			signin.enterEmail(data[i][0]);
-			signin.clickSubmit();
 			
 			String[] accDetails = data[i];
 			

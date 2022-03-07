@@ -4,17 +4,18 @@
   <test thread-count="5" name="ChromeTest">
 	<parameter name="browser" value="Chrome"></parameter>
     <classes>
-      <class name="com.automationpractice.TestScripts.VerifyBlankCountryZipTest"/>
+      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest"/>
     </classes>
   </test> <!-- Test -->
 
 <test thread-count="5" name="FirefoxTest">
 	<parameter name="browser" value="Firefox"></parameter>
     <classes>
-      <class name="com.automationpractice.TestScripts.VerifyBlankCountryZipTest"/>
+      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite>  <!-- Suite -->
+
 
 
 <!--<?xml version="1.0" encoding="UTF-8"?>
@@ -22,7 +23,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   </test> --><!-- Test -->
-<!--</suite>--> <!-- Suite -->
+<!-- </suite> --> <!-- Suite -->
+
+
+
+
+
+
+
 
 
 

@@ -33,8 +33,7 @@ public class VerifyBlankCountryZipTest extends Base
 		for (int i=1; i<data.length;i++) 
 		{
 			hm.clickSignin();
-			signin.enterEmail(data[i][0]);			
-			signin.clickSubmit();
+			signin.enterEmail(data[i][0]);	
 			acc.personalInformation(data[i]);
 			
 			String countryerror = acc.errorMessage();
