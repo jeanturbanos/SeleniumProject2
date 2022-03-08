@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-07T12:48:02 EST" name="Suite" finished-at="2022-03-07T12:48:45 EST" duration-ms="43488">
+  <suite started-at="2022-03-07T19:41:42 EST" name="Default suite" finished-at="2022-03-07T19:42:05 EST" duration-ms="22256">
     <groups>
     </groups>
-    <test started-at="2022-03-07T12:48:02 EST" name="FirefoxTest" finished-at="2022-03-07T12:48:23 EST" duration-ms="21195">
-      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest">
-        <test-method is-config="true" signature="OpenApplication(java.lang.String)[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@65c7a252]" started-at="2022-03-07T12:48:02 EST" name="OpenApplication" finished-at="2022-03-07T12:48:10 EST" duration-ms="8673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-03-07T19:41:42 EST" name="Default test" finished-at="2022-03-07T19:42:05 EST" duration-ms="22256">
+      <class name="com.automationpractice.TestScripts.VerifyAddProductReviewTest">
+        <test-method is-config="true" signature="OpenApplication()[pri:0, instance:com.automationpractice.TestScripts.VerifyAddProductReviewTest@21282ed8]" started-at="2022-03-07T19:41:42 EST" name="OpenApplication" finished-at="2022-03-07T19:41:47 EST" duration-ms="5129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApplication -->
-        <test-method signature="verifyInvalidLogin()[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@65c7a252]" started-at="2022-03-07T12:48:10 EST" name="verifyInvalidLogin" finished-at="2022-03-07T12:48:22 EST" duration-ms="11490" status="PASS">
+        <test-method signature="VerifyAddProductReview()[pri:0, instance:com.automationpractice.TestScripts.VerifyAddProductReviewTest@21282ed8]" started-at="2022-03-07T19:41:47 EST" name="VerifyAddProductReview" finished-at="2022-03-07T19:42:04 EST" duration-ms="16828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@65c7a252]" started-at="2022-03-07T12:48:22 EST" name="closeApplication" finished-at="2022-03-07T12:48:23 EST" duration-ms="993" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.automationpractice.TestScripts.VerifyInvalidLoginTest -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2022-03-07T12:48:02 EST" name="ChromeTest" finished-at="2022-03-07T12:48:45 EST" duration-ms="43488">
-      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest">
-        <test-method is-config="true" signature="OpenApplication(java.lang.String)[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@12aba8be]" started-at="2022-03-07T12:48:02 EST" name="OpenApplication" finished-at="2022-03-07T12:48:17 EST" duration-ms="14768" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenApplication -->
-        <test-method signature="verifyInvalidLogin()[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@12aba8be]" started-at="2022-03-07T12:48:17 EST" name="verifyInvalidLogin" finished-at="2022-03-07T12:48:45 EST" duration-ms="28528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.automationpractice.TestScripts.VerifyInvalidLoginTest@12aba8be]" started-at="2022-03-07T12:48:45 EST" name="closeApplication" finished-at="2022-03-07T12:48:45 EST" duration-ms="185" status="PASS">
+        </test-method> <!-- VerifyAddProductReview -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.automationpractice.TestScripts.VerifyAddProductReviewTest@21282ed8]" started-at="2022-03-07T19:42:04 EST" name="closeApplication" finished-at="2022-03-07T19:42:05 EST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.automationpractice.TestScripts.VerifyInvalidLoginTest -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.automationpractice.TestScripts.VerifyAddProductReviewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

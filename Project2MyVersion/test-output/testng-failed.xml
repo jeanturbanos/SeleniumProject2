@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest">
+      <class name="com.automationpractice.TestScripts.VerifyAddProductReviewTest">
         <methods>
           <include name="closeApplication"/>
           <include name="OpenApplication"/>
-          <include name="verifyInvalidLogin"/>
+          <include name="VerifyAddProductReview"/>
         </methods>
-      </class> <!-- com.automationpractice.TestScripts.VerifyInvalidLoginTest -->
+      </class> <!-- com.automationpractice.TestScripts.VerifyAddProductReviewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

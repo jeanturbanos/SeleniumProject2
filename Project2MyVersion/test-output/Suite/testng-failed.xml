@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest">
-        <methods>
-          <include name="closeApplication"/>
-          <include name="OpenApplication"/>
-          <include name="verifyInvalidLogin"/>
-        </methods>
-      </class> <!-- com.automationpractice.TestScripts.VerifyInvalidLoginTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
   <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.automationpractice.TestScripts.VerifyInvalidLoginTest">
+      <class name="com.automationpractice.TestScripts.VerifyAddProductReviewTest">
         <methods>
           <include name="closeApplication"/>
           <include name="OpenApplication"/>
-          <include name="verifyInvalidLogin"/>
+          <include name="VerifyAddProductReview"/>
         </methods>
-      </class> <!-- com.automationpractice.TestScripts.VerifyInvalidLoginTest -->
+      </class> <!-- com.automationpractice.TestScripts.VerifyAddProductReviewTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.automationpractice.TestScripts.VerifyAddProductReviewTest">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="OpenApplication"/>
+          <include name="VerifyAddProductReview"/>
+        </methods>
+      </class> <!-- com.automationpractice.TestScripts.VerifyAddProductReviewTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -19,22 +19,22 @@ public class Base
 {
 	WebDriver driver;
 	
-	@BeforeTest
-	@Parameters("browser")
+	@BeforeClass
+//	@Parameters("browser")
 	
-	public void OpenApplication(String browser) throws IOException
-//	public void OpenApplication() throws IOException
+//	public void OpenApplication(String browser) throws IOException
+	public void OpenApplication() throws IOException
 	{
-		if(browser.equals("Chrome"))
-		{
+//		if(browser.equals("Chrome"))
+//		{
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver = new ChromeDriver();
-		}		
-		else if(browser.equals("Firefox"))
-		{
-			System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-			driver = new FirefoxDriver();
-		}			
+//		}		
+//		else if(browser.equals("Firefox"))
+//		{
+//			System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+//			driver = new FirefoxDriver();
+//		}			
 
 		driver.manage().window().maximize();
 		String[][] data = GenericMethods.getData("D:\\QATesting\\Project2TestData.xlsx", "ConfigurationData");
@@ -44,7 +44,7 @@ public class Base
 	
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void closeApplication()
 	{
 		driver.quit();
