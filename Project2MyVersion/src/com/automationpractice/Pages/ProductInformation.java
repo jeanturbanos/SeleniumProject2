@@ -45,5 +45,10 @@ public class ProductInformation
 		return returmessage ;
 	}
 	
+	public void clickShareToFB()
+	{
+		shareonfb.click();
+	}
+	
 	
 }
