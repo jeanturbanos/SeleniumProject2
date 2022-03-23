@@ -5,23 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Home 
+public class OrderConfirmation 
 {
-	 @FindBy(linkText="Sign in")
-	 private WebElement signin;
-	 
-	 
-	 
-	 public Home(WebDriver driver) 
-	 {
+	@FindBy(css="#center_column > div > p > strong")
+	private WebElement orderconfirm;
+	
+	public OrderConfirmation(WebDriver driver)
+	{
 		PageFactory.initElements(driver, this);
-	 }
-	 
-	 
-	 public void clickSignin()
-	 {
-		 signin.click();
-	 }
-	 
+	}
+	
+	public String getConfMessage()
+	{
+		return orderconfirm.getText();
+	}
 }
-

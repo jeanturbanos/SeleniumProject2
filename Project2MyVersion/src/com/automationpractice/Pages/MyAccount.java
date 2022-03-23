@@ -24,8 +24,8 @@ public class MyAccount
 	  @FindBy(css="#center_column > ul > li > div > div.left-block > div > a.product_img_link > img")
 	  private WebElement selectdress;
 	  
-	
-	  
+	 
+	   
 	 
 	  
 	 public MyAccount(WebDriver driver) 
@@ -38,6 +38,11 @@ public class MyAccount
 		 Actions hover = new Actions(driver);
 		 hover.moveToElement(dresses).perform();
 		 casualdresses.click();
+		 
+	 }
+	 
+	 public void selectTheDress()
+	 {
 		 selectdress.click();
 	 }
 	  

@@ -40,7 +40,7 @@ public class GenericMethods {
 			wb.close();
 			return data;
 		}
-	
+	 
 	public static String getClassName(String className) {
 		String[] getClassName = className.split("\\.");
 

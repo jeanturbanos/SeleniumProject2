@@ -5,23 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Home 
+public class AddressConfirmation 
 {
-	 @FindBy(linkText="Sign in")
-	 private WebElement signin;
-	 
-	 
-	 
-	 public Home(WebDriver driver) 
-	 {
+	@FindBy(name="processAddress")
+	private WebElement proceedCheckout;
+	
+	public AddressConfirmation(WebDriver driver)
+	{
 		PageFactory.initElements(driver, this);
-	 }
-	 
-	 
-	 public void clickSignin()
-	 {
-		 signin.click();
-	 }
-	 
+	}
+	
+	
+	public void checkoutAddress()
+	{
+		proceedCheckout.click();
+	}
 }
-

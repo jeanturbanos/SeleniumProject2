@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProductInformation 
-{
+{ 
 	
 	@FindBy(css="#new_comment_tab_btn")
 	private WebElement buttonreview;
 
-	@FindBy(id="comment_title")
+	@FindBy(id="comment_title") 
 	private WebElement title;
 	
 	@FindBy(id="content")
@@ -28,6 +28,13 @@ public class ProductInformation
 	
 	@FindBy(css="#center_column > div > div > div.pb-center-column.col-xs-12.col-sm-4 > p.socialsharing_product.list-inline.no-print > button.btn.btn-default.btn-facebook")
 	private WebElement shareonfb;
+	
+	@FindBy(name="Submit")
+	private WebElement addtocart;
+
+	@FindBy(css="#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a")
+	private WebElement checkout;
+	
 	
 	public ProductInformation(WebDriver driver) 
 	 {
@@ -50,5 +57,11 @@ public class ProductInformation
 		shareonfb.click();
 	}
 	
+	public void addToCart()
+	{
+		addtocart.click();
+		checkout.click();
+	}
 	
 }
+

@@ -18,12 +18,12 @@ public class ShareProductFBTest extends Base
 {
 	@Test
 	public void ShareProductFB() throws IOException
-	{
+	{ 
 		Home hm = new Home(driver);
 		SignIn singin = new SignIn(driver);
 		MyAccount acc = new MyAccount(driver);
 		
-
+ 
 		String className = getClass().getTypeName();
 		String shortClassName = GenericMethods.getClassName(className);
 		
@@ -35,6 +35,7 @@ public class ShareProductFBTest extends Base
 			hm.clickSignin();
 			singin.loginToApplication(data[i][0], data[i][1]);
 			acc.selectProduct(driver);
+			acc.selectTheDress();
 			
 			ProductInformation prodinfo = new ProductInformation(driver);
 			prodinfo.clickShareToFB();
